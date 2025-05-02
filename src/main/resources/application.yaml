@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: zai-weather-checker
+
+  caching:
+    weather:
+      ttl: 3000

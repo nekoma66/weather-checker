@@ -1,0 +1,9 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          weatherstack:
+            url: http://api.weatherstack.com/
+          openweathermap:
+            url: https://api.openweathermap.org/data/2.5

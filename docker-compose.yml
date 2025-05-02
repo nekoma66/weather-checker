@@ -1,0 +1,14 @@
+services:
+  app:
+    image: 'weather-checker:latest'
+    build:
+      context: .
+    container_name: app
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - WEATHERSTACK_ACCESS_KEY_VALUE=YOUR_WEATHERSTACK_ACCESS_KEY_VALUE
+      - OPENWEATHERMAP_ACCESS_KEY_VALUE=OPENWEATHERMAP_ACCESS_KEY_VALUE
+    ports:
+      - "8080:8080"
+    networks:
+      - default

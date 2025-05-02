@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    openfeign:
+      client:
+        config:
+          weatherstack:
+            url: http://test.com/
+          openweathermap:
+            url: https://test.com/
+
+OPENWEATHERMAP_ACCESS_KEY_VALUE: dummy-value
+
+WEATHERSTACK_ACCESS_KEY_VALUE: dummy-value
